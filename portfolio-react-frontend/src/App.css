@@ -68,3 +68,7 @@ header.dark {
   background-color: #333333;
   color: #ffffff;
 }
+
+section {
+  transition: background-color 0.3s, color 0.3s;
+}

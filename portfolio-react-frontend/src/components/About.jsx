@@ -1,14 +1,17 @@
-const About = () => {
-    return (
-      <section id="about" className="py-20 bg-white px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">About Me</h2>
-          <p className="text-gray-600">
-            I’m a passionate developer with experience in Laravel, React, and building scalable web applications. I love learning and building side projects.
-          </p>
-        </div>
-      </section>
-    );
-  };
-  
-  export default About;
+import { useContext } from 'react';
+import { ThemeContext } from '../contexts/ThemeContext';
+
+function About() {
+  const { isDarkMode } = useContext(ThemeContext);
+
+  return (
+    <section className={`${isDarkMode ? 'bg-gray-800 text-white' : 'bg-gray-100 text-black'} py-20`}>
+      <div className="container mx-auto">
+        <h2 className="text-3xl font-bold text-center">About Me</h2>
+        <p className="mt-4 text-center">I am a passionate developer with experience in building web applications.</p>
+      </div>
+    </section>
+  );
+}
+
+export default About;
