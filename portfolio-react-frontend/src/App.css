@@ -40,3 +40,31 @@
 .read-the-docs {
   color: #888;
 }
+
+
+/* Light mode styles */
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark mode styles */
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Example for other components */
+header {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+header.dark {
+  background-color: #333333;
+  color: #ffffff;
+}
